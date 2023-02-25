@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOI.TestCases", "..\testca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOI.OOXML.TestCases", "..\testcases\ooxml\NPOI.OOXML.TestCases.csproj", "{0BF8C464-8779-43CF-AD7A-B1109A86EAAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOI.OOXML4Net.Testcases", "..\testcases\openxml4net\NPOI.OOXML4Net.Testcases.csproj", "{F5A6FF78-2C51-44E8-9E31-CD1B3EF784E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOI.OpenXml4Net.TestCases", "..\testcases\openxml4Net\NPOI.OpenXml4Net.TestCases.csproj", "{F5A6FF78-2C51-44E8-9E31-CD1B3EF784E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestCases", "TestCases", "{FF9A0E21-3F67-4CB3-AA85-FC80E4D223D6}"
 	ProjectSection(SolutionItems) = preProject

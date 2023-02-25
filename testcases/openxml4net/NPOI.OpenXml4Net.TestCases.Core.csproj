@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AssemblyName>NPOI.OOXML4Net.TestCases</AssemblyName>
+    <AssemblyName>NPOI.OpenXml4Net.TestCases</AssemblyName>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
     <RootNamespace>TestCases</RootNamespace>
