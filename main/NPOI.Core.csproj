@@ -8,13 +8,19 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\npoi.snk</AssemblyOriginatorKeyFile>
     <RepositoryUrl>https://github.com/tonyqus/npoi</RepositoryUrl>
-    <OutputPath></OutputPath>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
-    <DocumentationFile>C:\github\npoi\main\NPOI.xml</DocumentationFile>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\solution\Debug\</OutputPath>
+    <IntermediateOutputPath>..\solution\Debug\obj\</IntermediateOutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\solution\Lib\</OutputPath>
+    <IntermediateOutputPath>..\solution\Lib\obj\</IntermediateOutputPath>
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\font_metrics.properties" />

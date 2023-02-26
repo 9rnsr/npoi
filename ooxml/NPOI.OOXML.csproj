@@ -38,10 +38,12 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <OutputPath>..\solution\Lib\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>..\solution\Debug\.net472\</OutputPath>
+    <IntermediateOutputPath>..\solution\Debug\obj\.net472\</IntermediateOutputPath>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <DefineConstants>TRACE;DEBUG;HIDE_UNREACHABLE_CODE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;HIDE_UNREACHABLE_CODE</DefineConstants>
     <Optimize>false</Optimize>
     <NoWarn>1591</NoWarn>
     <ErrorReport>prompt</ErrorReport>
@@ -49,20 +51,21 @@
     <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
     <RunCodeAnalysis>false</RunCodeAnalysis>
-    <DocumentationFile>..\solution\Lib\NPOI.OOXML.XML</DocumentationFile>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <OutputPath>..\solution\Lib\.net45\</OutputPath>
+    <OutputPath>..\solution\Lib\.net472\</OutputPath>
+    <IntermediateOutputPath>..\solution\Lib\obj\.net472\</IntermediateOutputPath>
     <DebugType>pdbonly</DebugType>
     <DefineConstants>TRACE;HIDE_UNREACHABLE_CODE</DefineConstants>
     <Optimize>true</Optimize>
     <NoWarn>1591;1587;1570</NoWarn>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
-    <DocumentationFile>..\solution\Lib\.net45\NPOI.OOXML.XML</DocumentationFile>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>

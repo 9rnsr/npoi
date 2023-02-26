@@ -39,7 +39,8 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <OutputPath>..\..\solution\Lib\.net4\</OutputPath>
+    <OutputPath>..\..\solution\Debug\.net472\</OutputPath>
+    <IntermediateOutputPath>..\..\solution\Debug\obj\.net472\</IntermediateOutputPath>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineConstants>DEBUG;TRACE;HIDE_UNREACHABLE_CODE</DefineConstants>
@@ -51,7 +52,8 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <OutputPath>..\..\solution\Lib\.net4\</OutputPath>
+    <OutputPath>..\..\solution\Lib\.net472\</OutputPath>
+    <IntermediateOutputPath>..\..\solution\Lib\obj\.net472\</IntermediateOutputPath>
     <DebugType>pdbonly</DebugType>
     <DefineConstants>TRACE;HIDE_UNREACHABLE_CODE</DefineConstants>
     <Optimize>true</Optimize>
