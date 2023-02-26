@@ -22,9 +22,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
-    <PackageReference Include="NSubstitute" Version="3.1.0" />
-    <PackageReference Include="NUnit" Version="3.10.1" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="NSubstitute" Version="4.2.2" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.3.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +33,13 @@
     <ProjectReference Include="..\..\openxml4Net\NPOI.OpenXml4Net.Core.csproj" />
     <ProjectReference Include="..\..\OpenXmlFormats\NPOI.OpenXmlFormats.Core.csproj" />
     <ProjectReference Include="..\main\NPOI.TestCases.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
