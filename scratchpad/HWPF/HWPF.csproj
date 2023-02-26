@@ -66,28 +66,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converter\AbstractWordConverter.cs" />
-    <Compile Include="Converter\AbstractWordUtils.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Converter\WordToFoConverter.cs" />
+    <Compile Include="Converter\AbstractWordUtils.cs" />
+    <Compile Include="Converter\DefaultFontReplacer.cs" />
     <Compile Include="Converter\FoDocumentFacade.cs" />
-    <Compile Include="Converter\WordToFoUtils.cs" />
-    <Compile Include="Converter\WordToTextConverter.cs" />
-    <Compile Include="Converter\TextDocumentFacade.cs" />
-    <Compile Include="Converter\DefaultFontReplacer.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Converter\HtmlDocumentFacade.cs" />
     <Compile Include="Converter\FontReplacer.cs" />
+    <Compile Include="Converter\HtmlDocumentFacade.cs" />
     <Compile Include="Converter\NumberFormatter.cs" />
     <Compile Include="Converter\PicturesManager.cs" />
+    <Compile Include="Converter\TextDocumentFacade.cs" />
+    <Compile Include="Converter\WordToFoConverter.cs" />
+    <Compile Include="Converter\WordToFoUtils.cs" />
     <Compile Include="Converter\WordToHtmlConverter.cs" />
     <Compile Include="Converter\WordToHtmlUtils.cs" />
+    <Compile Include="Converter\WordToTextConverter.cs" />
     <Compile Include="Extractor\Word6Extractor.cs" />
     <Compile Include="Extractor\WordExtractor.cs" />
-    <Compile Include="HWPFDocument.cs" />
-    <Compile Include="HWPFDocumentCore.cs" />
-    <Compile Include="HWPFOldDocument.cs" />
     <Compile Include="Model\BaseObject.cs" />
     <Compile Include="Model\BookmarkFirstDescriptor.cs" />
     <Compile Include="Model\BookmarksTables.cs" />
@@ -97,15 +90,10 @@
     <Compile Include="Model\CHPBinTable.cs" />
     <Compile Include="Model\CHPFormattedDiskPage.cs" />
     <Compile Include="Model\CHPX.cs" />
-    <Compile Include="Model\PictureDescriptor.cs" />
-    <Compile Include="Model\SinglentonTextPiece.cs" />
-    <Compile Include="Model\FSPADocumentPart.cs" />
     <Compile Include="Model\ComplexFileTable.cs" />
     <Compile Include="Model\CPSplitCalculator.cs" />
     <Compile Include="Model\DocumentProperties.cs" />
-    <Compile Include="Model\EscherRecordHolder.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Model\EscherRecordHolder.cs" />
     <Compile Include="Model\Ffn.cs" />
     <Compile Include="Model\FIBFieldHandler.cs" />
     <Compile Include="Model\FIBLongHandler.cs" />
@@ -118,16 +106,11 @@
     <Compile Include="Model\FootnoteReferenceDescriptor.cs" />
     <Compile Include="Model\FormattedDiskPage.cs" />
     <Compile Include="Model\FSPA.cs" />
+    <Compile Include="Model\FSPADocumentPart.cs" />
     <Compile Include="Model\FSPATable.cs" />
-    <Compile Include="Model\GenericPropertyNode.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Model\IO\HWPFFileSystem.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Model\IO\HWPFOutputStream.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Model\GenericPropertyNode.cs" />
+    <Compile Include="Model\IO\HWPFFileSystem.cs" />
+    <Compile Include="Model\IO\HWPFOutputStream.cs" />
     <Compile Include="Model\ListData.cs" />
     <Compile Include="Model\ListFormatOverride.cs" />
     <Compile Include="Model\ListFormatOverrideLevel.cs" />
@@ -142,31 +125,21 @@
     <Compile Include="Model\PAPFormattedDiskPage.cs" />
     <Compile Include="Model\PAPX.cs" />
     <Compile Include="Model\ParagraphHeight.cs" />
-    <Compile Include="Model\PicturesTable.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Model\PieceDescriptor.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Model\PictureDescriptor.cs" />
+    <Compile Include="Model\PicturesTable.cs" />
+    <Compile Include="Model\PieceDescriptor.cs" />
     <Compile Include="Model\PlexOfCps.cs" />
     <Compile Include="Model\PlexOfField.cs" />
     <Compile Include="Model\PropertyModifier.cs" />
-    <Compile Include="Model\PropertyNode.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Model\PropertyNode.cs" />
     <Compile Include="Model\RevisionMarkAuthorTable.cs" />
-    <Compile Include="Model\SavedByEntry.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Model\SavedByTable.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Model\SavedByEntry.cs" />
+    <Compile Include="Model\SavedByTable.cs" />
     <Compile Include="Model\SectionDescriptor.cs" />
     <Compile Include="Model\SectionTable.cs" />
     <Compile Include="Model\SEPX.cs" />
-    <Compile Include="Model\ShapesTable.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Model\ShapesTable.cs" />
+    <Compile Include="Model\SinglentonTextPiece.cs" />
     <Compile Include="Model\SttbfUtils.cs" />
     <Compile Include="Model\StyleDescription.cs" />
     <Compile Include="Model\StyleSheet.cs" />
@@ -174,80 +147,41 @@
     <Compile Include="Model\TextPiece.cs" />
     <Compile Include="Model\TextPieceTable.cs" />
     <Compile Include="Model\Types\BKFAbstractType.cs" />
-    <Compile Include="Model\Types\CHPAbstractType.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Model\Types\DOPAbstractType.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Model\Types\FIBAbstractType.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Model\Types\CHPAbstractType.cs" />
+    <Compile Include="Model\Types\DOPAbstractType.cs" />
+    <Compile Include="Model\Types\FIBAbstractType.cs" />
     <Compile Include="Model\Types\FLDAbstractType.cs" />
     <Compile Include="Model\Types\FRDAbstractType.cs" />
     <Compile Include="Model\Types\FSPAAbstractType.cs" />
     <Compile Include="Model\Types\HRESIAbstractType.cs" />
     <Compile Include="Model\Types\LFOAbstractType.cs" />
-    <Compile Include="Model\Types\PAPAbstractType.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Model\Types\SEPAbstractType.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Model\Types\TAPAbstractType.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Model\Types\TCAbstractType.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Model\Types\PAPAbstractType.cs" />
+    <Compile Include="Model\Types\SEPAbstractType.cs" />
+    <Compile Include="Model\Types\TAPAbstractType.cs" />
+    <Compile Include="Model\Types\TCAbstractType.cs" />
     <Compile Include="Model\Types\TLPAbstractType.cs" />
     <Compile Include="Model\UnhandledDataStructure.cs" />
-    <Compile Include="Model\UPX.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="OldWordFileFormatException.cs" />
+    <Compile Include="Model\UPX.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SPRM\CharacterSprmCompressor.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="SPRM\CharacterSprmCompressor.cs" />
     <Compile Include="SPRM\CharacterSprmUncompressor.cs" />
-    <Compile Include="SPRM\ParagraphSprmCompressor.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="SPRM\ParagraphSprmCompressor.cs" />
     <Compile Include="SPRM\ParagraphSprmUncompressor.cs" />
-    <Compile Include="SPRM\SectionSprmCompressor.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SPRM\SectionSprmUncompressor.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SPRM\SprmBuffer.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SPRM\SprmIterator.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SPRM\SprmOperation.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SPRM\SprmUncompressor.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SPRM\SprmUtils.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SPRM\TableSprmCompressor.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="SPRM\SectionSprmCompressor.cs" />
+    <Compile Include="SPRM\SectionSprmUncompressor.cs" />
+    <Compile Include="SPRM\SprmBuffer.cs" />
+    <Compile Include="SPRM\SprmIterator.cs" />
+    <Compile Include="SPRM\SprmOperation.cs" />
+    <Compile Include="SPRM\SprmUncompressor.cs" />
+    <Compile Include="SPRM\SprmUtils.cs" />
+    <Compile Include="SPRM\TableSprmCompressor.cs" />
     <Compile Include="SPRM\TableSprmUncompressor.cs" />
     <Compile Include="UserModel\Bookmark.cs" />
     <Compile Include="UserModel\Bookmarks.cs" />
     <Compile Include="UserModel\BookmarksImpl.cs" />
     <Compile Include="UserModel\BorderCode.cs" />
     <Compile Include="UserModel\CharacterProperties.cs" />
-    <Compile Include="UserModel\CharacterRun.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="UserModel\CharacterRun.cs" />
     <Compile Include="UserModel\DateAndTime.cs" />
     <Compile Include="UserModel\DocumentPosition.cs" />
     <Compile Include="UserModel\DropCapSpecifier.cs" />
@@ -271,9 +205,7 @@
     <Compile Include="UserModel\Picture.cs" />
     <Compile Include="UserModel\PictureType.cs" />
     <Compile Include="UserModel\Range.cs" />
-    <Compile Include="UserModel\Section.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="UserModel\Section.cs" />
     <Compile Include="UserModel\SectionProperties.cs" />
     <Compile Include="UserModel\ShadingDescriptor.cs" />
     <Compile Include="UserModel\Shape.cs" />
@@ -284,6 +216,10 @@
     <Compile Include="UserModel\TableIterator.cs" />
     <Compile Include="UserModel\TableProperties.cs" />
     <Compile Include="UserModel\TableRow.cs" />
+    <Compile Include="HWPFDocument.cs" />
+    <Compile Include="HWPFDocumentCore.cs" />
+    <Compile Include="HWPFOldDocument.cs" />
+    <Compile Include="OldWordFileFormatException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

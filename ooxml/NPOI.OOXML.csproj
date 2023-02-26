@@ -115,26 +115,17 @@
     <Compile Include="POIFS\Crypt\Dsig\SignatureInfo.cs" />
     <Compile Include="POIFS\Crypt\Dsig\SignatureMarshalListener.cs" />
     <Compile Include="POIFS\Crypt\Dsig\TrustCertificateSecurityException.cs" />
-    <Compile Include="POIXMLDocument.cs" />
-    <Compile Include="POIXMLDocumentPart.cs" />
-    <Compile Include="POIXmlException.cs" />
-    <Compile Include="POIXMLFactory.cs" />
-    <Compile Include="POIXMLProperties.cs" />
-    <Compile Include="POIXMLPropertiesTextExtractor.cs" />
-    <Compile Include="POIXMLRelation.cs" />
-    <Compile Include="POIXMLTextExtractor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SS\Converter\ExcelToHtmlConverter.cs" />
     <Compile Include="SS\Converter\ExcelToHtmlUtils.cs" />
     <Compile Include="SS\UserModel\WorkbookFactory.cs" />
+    <Compile Include="Util\EnumConverter.cs" />
     <Compile Include="Util\IdentifierManager.cs" />
     <Compile Include="Util\PackageHelper.cs" />
     <Compile Include="XSSF\Extractor\XSSFExcelExtractor.cs" />
     <Compile Include="XSSF\Extractor\XSSFExportToXml.cs" />
     <Compile Include="XSSF\Model\CalculationChain.cs" />
-    <Compile Include="XSSF\Model\CommentsTable.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="XSSF\Model\CommentsTable.cs" />
     <Compile Include="XSSF\Model\ExternalLinksTable.cs" />
     <Compile Include="XSSF\Model\MapInfo.cs" />
     <Compile Include="XSSF\Model\ParagraphPropertyFetcher.cs" />
@@ -175,27 +166,15 @@
     <Compile Include="XSSF\UserModel\Charts\AbstractXSSFChartSeries.cs" />
     <Compile Include="XSSF\UserModel\Charts\XSSFBarChartData.cs" />
     <Compile Include="XSSF\UserModel\Charts\XSSFCategoryAxis.cs" />
-    <Compile Include="XSSF\UserModel\Charts\XSSFChartAxis.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="XSSF\UserModel\Charts\XSSFChartDataFactory.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="XSSF\UserModel\Charts\XSSFChartLegend.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="XSSF\UserModel\Charts\XSSFChartAxis.cs" />
+    <Compile Include="XSSF\UserModel\Charts\XSSFChartDataFactory.cs" />
+    <Compile Include="XSSF\UserModel\Charts\XSSFChartLegend.cs" />
     <Compile Include="XSSF\UserModel\Charts\XSSFChartUtil.cs" />
     <Compile Include="XSSF\UserModel\Charts\XSSFDateAxis.cs" />
     <Compile Include="XSSF\UserModel\Charts\XSSFLineChartData.cs" />
-    <Compile Include="XSSF\UserModel\Charts\XSSFManualLayout.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="XSSF\UserModel\Charts\XSSFScatterChartData.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="XSSF\UserModel\Charts\XSSFValueAxis.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="XSSF\UserModel\Charts\XSSFManualLayout.cs" />
+    <Compile Include="XSSF\UserModel\Charts\XSSFScatterChartData.cs" />
+    <Compile Include="XSSF\UserModel\Charts\XSSFValueAxis.cs" />
     <Compile Include="XSSF\UserModel\DefaultIndexedColorMap.cs" />
     <Compile Include="XSSF\UserModel\Extensions\XSSFCellAlignment.cs" />
     <Compile Include="XSSF\UserModel\Extensions\XSSFCellBorder.cs" />
@@ -258,11 +237,11 @@
     <Compile Include="XSSF\UserModel\XSSFFontFormatting.cs" />
     <Compile Include="XSSF\UserModel\XSSFFormulaEvaluator.cs" />
     <Compile Include="XSSF\UserModel\XSSFGraphicFrame.cs" />
+    <Compile Include="XSSF\UserModel\XSSFHyperlink.cs" />
     <Compile Include="XSSF\UserModel\XSSFIconMultiStateFormatting.cs" />
     <Compile Include="XSSF\UserModel\XSSFLineBreak.cs" />
     <Compile Include="XSSF\UserModel\XSSFMap.cs" />
     <Compile Include="XSSF\UserModel\XSSFName.cs" />
-    <Compile Include="XSSF\UserModel\XSSFHyperlink.cs" />
     <Compile Include="XSSF\UserModel\XSSFOddFooter.cs" />
     <Compile Include="XSSF\UserModel\XSSFOddHeader.cs" />
     <Compile Include="XSSF\UserModel\XSSFPatternFormatting.cs" />
@@ -308,8 +287,6 @@
     <Compile Include="XWPF\Usermodel\Borders.cs" />
     <Compile Include="XWPF\Usermodel\BreakClear.cs" />
     <Compile Include="XWPF\Usermodel\BreakType.cs" />
-    <Compile Include="XWPF\Usermodel\MathContainer.cs" />
-    <Compile Include="XWPF\Usermodel\XWPFAcc.cs" />
     <Compile Include="XWPF\Usermodel\Document.cs" />
     <Compile Include="XWPF\Usermodel\IBody.cs" />
     <Compile Include="XWPF\Usermodel\IBodyElement.cs" />
@@ -319,6 +296,7 @@
     <Compile Include="XWPF\Usermodel\ISDTContent.cs" />
     <Compile Include="XWPF\Usermodel\ISDTContents.cs" />
     <Compile Include="XWPF\Usermodel\LineSpacingRule.cs" />
+    <Compile Include="XWPF\Usermodel\MathContainer.cs" />
     <Compile Include="XWPF\Usermodel\ParagraphAlignment.cs" />
     <Compile Include="XWPF\Usermodel\PositionInParagraph.cs" />
     <Compile Include="XWPF\Usermodel\TextAlignment.cs" />
@@ -327,12 +305,12 @@
     <Compile Include="XWPF\Usermodel\UnderlinePatterns.cs" />
     <Compile Include="XWPF\Usermodel\VerticalAlign.cs" />
     <Compile Include="XWPF\Usermodel\XWPFAbstractNum.cs" />
+    <Compile Include="XWPF\Usermodel\XWPFAcc.cs" />
     <Compile Include="XWPF\Usermodel\XWPFComment.cs" />
     <Compile Include="XWPF\Usermodel\XWPFComments.cs" />
     <Compile Include="XWPF\Usermodel\XWPFDefaultParagraphStyle.cs" />
     <Compile Include="XWPF\Usermodel\XWPFDefaultRunStyle.cs" />
     <Compile Include="XWPF\Usermodel\XWPFDocument.cs" />
-    <Compile Include="XWPF\Usermodel\XWPFRad.cs" />
     <Compile Include="XWPF\Usermodel\XWPFF.cs" />
     <Compile Include="XWPF\Usermodel\XWPFFactory.cs" />
     <Compile Include="XWPF\Usermodel\XWPFFieldRun.cs" />
@@ -352,6 +330,7 @@
     <Compile Include="XWPF\Usermodel\XWPFParagraph.cs" />
     <Compile Include="XWPF\Usermodel\XWPFPicture.cs" />
     <Compile Include="XWPF\Usermodel\XWPFPictureData.cs" />
+    <Compile Include="XWPF\Usermodel\XWPFRad.cs" />
     <Compile Include="XWPF\Usermodel\XWPFRelation.cs" />
     <Compile Include="XWPF\Usermodel\XWPFRun.cs" />
     <Compile Include="XWPF\Usermodel\XWPFSDT.cs" />
@@ -360,15 +339,22 @@
     <Compile Include="XWPF\Usermodel\XWPFSDTContentCell.cs" />
     <Compile Include="XWPF\Usermodel\XWPFSettings.cs" />
     <Compile Include="XWPF\Usermodel\XWPFSharedRun.cs" />
-    <Compile Include="XWPF\Usermodel\XWPFSSup.cs" />
     <Compile Include="XWPF\Usermodel\XWPFSSub.cs" />
+    <Compile Include="XWPF\Usermodel\XWPFSSup.cs" />
     <Compile Include="XWPF\Usermodel\XWPFStyle.cs" />
     <Compile Include="XWPF\Usermodel\XWPFStyles.cs" />
     <Compile Include="XWPF\Usermodel\XWPFTable.cs" />
     <Compile Include="XWPF\Usermodel\XWPFTableCell.cs" />
     <Compile Include="XWPF\Usermodel\XWPFTableRow.cs" />
-    <Compile Include="Util\EnumConverter.cs" />
     <Compile Include="XWPF\Util\DocumentStylesBuilder.cs" />
+    <Compile Include="POIXMLDocument.cs" />
+    <Compile Include="POIXMLDocumentPart.cs" />
+    <Compile Include="POIXmlException.cs" />
+    <Compile Include="POIXMLFactory.cs" />
+    <Compile Include="POIXMLProperties.cs" />
+    <Compile Include="POIXMLPropertiesTextExtractor.cs" />
+    <Compile Include="POIXMLRelation.cs" />
+    <Compile Include="POIXMLTextExtractor.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

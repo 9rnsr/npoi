@@ -120,10 +120,6 @@
     <Compile Include="SS\UserModel\TestXSSFBorderStyle.cs" />
     <Compile Include="SS\Util\TestSXSSFCellUtil.cs" />
     <Compile Include="SS\Util\TestXSSFCellUtil.cs" />
-    <Compile Include="TestDetectAsOOXML.cs" />
-    <Compile Include="TestEmbeded.cs" />
-    <Compile Include="TestPOIXMLDocument.cs" />
-    <Compile Include="TestPOIXMLProperties.cs" />
     <Compile Include="Util\TestIdentifierManager.cs" />
     <Compile Include="XSSF\Extractor\TestXSSFExcelExtractor.cs" />
     <Compile Include="XSSF\Extractor\TestXSSFExportToXML.cs" />
@@ -155,6 +151,7 @@
     <Compile Include="XSSF\SXSSFITestDataProvider.cs" />
     <Compile Include="XSSF\TestSheetProtection.cs" />
     <Compile Include="XSSF\TestXSSFCloneSheet.cs" />
+    <Compile Include="XSSF\UserModel\BaseTestXSSFPivotTable.cs" />
     <Compile Include="XSSF\UserModel\Charts\TestXSSFCategoryAxis.cs" />
     <Compile Include="XSSF\UserModel\Charts\TestXSSFChartAxis.cs" />
     <Compile Include="XSSF\UserModel\Charts\TestXSSFChartLegend.cs" />
@@ -163,13 +160,13 @@
     <Compile Include="XSSF\UserModel\Charts\TestXSSFManualLayout.cs" />
     <Compile Include="XSSF\UserModel\Charts\TestXSSFScatterChartData.cs" />
     <Compile Include="XSSF\UserModel\Charts\TestXSSFValueAxis.cs" />
-    <Compile Include="XSSF\UserModel\TestFormulaEvaluatorOnXSSF.cs" />
-    <Compile Include="XSSF\UserModel\TestMissingWorkbookOnXSSF.cs" />
-    <Compile Include="XSSF\UserModel\TestMultiSheetFormulaEvaluatorOnXSSF.cs" />
     <Compile Include="XSSF\UserModel\Extensions\TestXSSFBorder.cs" />
     <Compile Include="XSSF\UserModel\Extensions\TestXSSFCellFill.cs" />
     <Compile Include="XSSF\UserModel\Helpers\TestColumnHelper.cs" />
     <Compile Include="XSSF\UserModel\Helpers\TestHeaderFooterHelper.cs" />
+    <Compile Include="XSSF\UserModel\TestFormulaEvaluatorOnXSSF.cs" />
+    <Compile Include="XSSF\UserModel\TestMissingWorkbookOnXSSF.cs" />
+    <Compile Include="XSSF\UserModel\TestMultiSheetFormulaEvaluatorOnXSSF.cs" />
     <Compile Include="XSSF\UserModel\TestSheetHiding.cs" />
     <Compile Include="XSSF\UserModel\TestUnfixedBugs.cs" />
     <Compile Include="XSSF\UserModel\TestXSSFBugs.cs" />
@@ -195,7 +192,6 @@
     <Compile Include="XSSF\UserModel\TestXSSFName.cs" />
     <Compile Include="XSSF\UserModel\TestXSSFPicture.cs" />
     <Compile Include="XSSF\UserModel\TestXSSFPictureData.cs" />
-    <Compile Include="XSSF\UserModel\BaseTestXSSFPivotTable.cs" />
     <Compile Include="XSSF\UserModel\TestXSSFPivotTableName.cs" />
     <Compile Include="XSSF\UserModel\TestXSSFPivotTableRef.cs" />
     <Compile Include="XSSF\UserModel\TestXSSFPrintSetup.cs" />
@@ -242,6 +238,10 @@
     <Compile Include="XWPF\UserModel\TestXWPFTableCell.cs" />
     <Compile Include="XWPF\UserModel\TestXWPFTableRow.cs" />
     <Compile Include="XWPF\XWPFTestDataSamples.cs" />
+    <Compile Include="TestDetectAsOOXML.cs" />
+    <Compile Include="TestEmbeded.cs" />
+    <Compile Include="TestPOIXMLDocument.cs" />
+    <Compile Include="TestPOIXMLProperties.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

@@ -95,9 +95,7 @@
     <Compile Include="Record\RecordTypes.cs" />
     <Compile Include="Record\RoundTripHFPlaceholder12.cs" />
     <Compile Include="Record\SoundData.cs" />
-    <Compile Include="Record\StyleTextPropAtom.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Record\StyleTextPropAtom.cs" />
     <Compile Include="Record\TextBytesAtom.cs" />
     <Compile Include="Record\TextCharsAtom.cs" />
     <Compile Include="Record\TextHeaderAtom.cs" />
