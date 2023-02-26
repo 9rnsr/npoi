@@ -12,9 +12,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NPOI.OOXML.Testcases</RootNamespace>
     <AssemblyName>NPOI.OOXML.Testcases</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -34,18 +35,15 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OutputPath>..\..\solution\Lib\.net4\</OutputPath>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\solution\Lib\.net4\</OutputPath>
     <DefineConstants>DEBUG;TRACE;HIDE_UNREACHABLE_CODE</DefineConstants>
+    <Optimize>false</Optimize>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
@@ -53,16 +51,18 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <OutputPath>..\..\solution\Lib\.net4\</OutputPath>
+    <DebugType>pdbonly</DebugType>
     <DefineConstants>TRACE;HIDE_UNREACHABLE_CODE</DefineConstants>
+    <Optimize>true</Optimize>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '.net 4 Release|AnyCPU'">
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <OutputPath>..\..\solution\Lib\.net4\</OutputPath>
     <DefineConstants>TRACE;HIDE_UNREACHABLE_CODE</DefineConstants>
     <Optimize>true</Optimize>
@@ -73,6 +73,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '.net 2 Release|AnyCPU'">
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <OutputPath>..\..\solution\Lib\.net2\</OutputPath>
     <DefineConstants>TRACE;HIDE_UNREACHABLE_CODE</DefineConstants>
     <Optimize>true</Optimize>
@@ -83,11 +84,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '.net 4.7.2|AnyCPU'">
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <OutputPath>bin\.net 4.7.2\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -247,28 +249,6 @@
     <Compile Include="XWPF\XWPFTestDataSamples.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\main\NPOI.csproj">
-      <Project>{10FA8538-157A-4380-A4F6-8E2C3EE92CAE}</Project>
-      <Name>NPOI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\ooxml\NPOI.OOXML.csproj">
-      <Project>{6BEED965-B9A0-4FFA-B96D-0F380A97331A}</Project>
-      <Name>NPOI.OOXML</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\openxml4Net\NPOI.OpenXml4Net.csproj">
-      <Project>{C9F265B7-ECE3-4755-B0B1-79536575C2A9}</Project>
-      <Name>NPOI.OpenXml4Net</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\OpenXmlFormats\NPOI.OpenXmlFormats.csproj">
-      <Project>{A6874784-2875-4F40-9E8F-8385A640F5D6}</Project>
-      <Name>NPOI.OpenXmlFormats</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\main\NPOI.TestCases.csproj">
-      <Project>{a920c2ba-8bfd-4f54-8401-7d1c0730f1f0}</Project>
-      <Name>NPOI.TestCases</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
@@ -302,6 +282,28 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\main\NPOI.csproj">
+      <Project>{10FA8538-157A-4380-A4F6-8E2C3EE92CAE}</Project>
+      <Name>NPOI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ooxml\NPOI.OOXML.csproj">
+      <Project>{6BEED965-B9A0-4FFA-B96D-0F380A97331A}</Project>
+      <Name>NPOI.OOXML</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\openxml4Net\NPOI.OpenXml4Net.csproj">
+      <Project>{C9F265B7-ECE3-4755-B0B1-79536575C2A9}</Project>
+      <Name>NPOI.OpenXml4Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OpenXmlFormats\NPOI.OpenXmlFormats.csproj">
+      <Project>{A6874784-2875-4F40-9E8F-8385A640F5D6}</Project>
+      <Name>NPOI.OpenXmlFormats</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\main\NPOI.TestCases.csproj">
+      <Project>{a920c2ba-8bfd-4f54-8401-7d1c0730f1f0}</Project>
+      <Name>NPOI.TestCases</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NSubstitute">

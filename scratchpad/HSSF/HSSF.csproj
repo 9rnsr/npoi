@@ -67,12 +67,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HWPF\HWPF.csproj">
-      <Project>{F040162E-F6F3-4B09-809B-3095A07A6687}</Project>
-      <Name>HWPF</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="UserModel\" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +80,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HWPF\HWPF.csproj">
+      <Project>{F040162E-F6F3-4B09-809B-3095A07A6687}</Project>
+      <Name>HWPF</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

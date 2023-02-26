@@ -11,6 +11,8 @@
     <RootNamespace>NPOI</RootNamespace>
     <AssemblyName>NPOI.OOXML</AssemblyName>
     <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -30,27 +32,24 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
     <RepositoryUrl>https://github.com/tonyqus/npoi</RepositoryUrl>
     <LangVersion>default</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OutputPath>..\solution\Lib\</OutputPath>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\solution\Lib\</OutputPath>
     <DefineConstants>TRACE;DEBUG;HIDE_UNREACHABLE_CODE</DefineConstants>
+    <Optimize>false</Optimize>
+    <NoWarn>1591</NoWarn>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <DocumentationFile>..\solution\Lib\NPOI.OOXML.XML</DocumentationFile>
-    <NoWarn>1591</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '.net 4 Release|AnyCPU'">
@@ -68,16 +67,15 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '.net 4.5 release|AnyCPU'">
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <OutputPath>..\solution\Lib\.net45\</OutputPath>
+    <DebugType>pdbonly</DebugType>
     <DefineConstants>TRACE;HIDE_UNREACHABLE_CODE</DefineConstants>
-    <DocumentationFile>..\solution\Lib\.net45\NPOI.OOXML.XML</DocumentationFile>
     <Optimize>true</Optimize>
     <NoWarn>1591;1587;1570</NoWarn>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>..\solution\Lib\.net45\NPOI.OOXML.XML</DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -394,11 +392,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Enums.NET">
-      <Version>4.0.0</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\main\NPOI.csproj">
       <Project>{10fa8538-157a-4380-a4f6-8e2c3ee92cae}</Project>
       <Name>NPOI</Name>
@@ -411,6 +404,11 @@
       <Project>{a6874784-2875-4f40-9e8f-8385a640f5d6}</Project>
       <Name>NPOI.OpenXmlFormats</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Enums.NET">
+      <Version>4.0.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
