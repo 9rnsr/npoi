@@ -1359,7 +1359,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="npoi.snk" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\functionMetadata.txt">

@@ -156,7 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="npoi.snk" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\main\NPOI.csproj">
